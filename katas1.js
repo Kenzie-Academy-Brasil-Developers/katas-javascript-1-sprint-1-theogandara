@@ -1,25 +1,26 @@
 function oneThroughTwenty() {
 
+  const resultado = []
   let max = 0
     
   while (max < 20){
-  console.log (max)
   max++
+  resultado.push (max)
   }
-  return max
+  return resultado
 }
 
 console.log(oneThroughTwenty());
 
 function evensToTwenty() {
 
-  let max = 2
-    
+  let max = 0
+  const resultado = []   
     while (max < 20){
-    console.log (max)
     max += 2
+    resultado.push(max)
     }
-    return max
+    return resultado
 }
 
 console.log(evensToTwenty());
@@ -27,12 +28,13 @@ console.log(evensToTwenty());
 function oddsToTwenty() {
     
   let max = 1
+  const resultado = []
 
       while (max <20){
-      console.log (max)
+      resultado.push(max)
       max += 2
     }
-   return max
+   return resultado
 }
 
 console.log(oddsToTwenty());
@@ -40,25 +42,28 @@ console.log(oddsToTwenty());
 function multiplesOfFive() {
     
   let multiFive = 5
+  const resultado = []
 
-  while (multiFive < 100){
-    console.log (multiFive)
+  while (multiFive <= 100){
+    resultado.push (multiFive)
     multiFive += 5
   }
-  return multiFive
+  return resultado
 }
 
 console.log(multiplesOfFive());
 
 function squareNumbers() {
     
-  let numeroQuadrado = 0
+  let numeroQuadrado = 1
 
-   while (numeroQuadrado < 10){
-   console.log (numeroQuadrado**2)
-   numeroQuadrado += 1
+  const resultado = []
+
+  while (numeroQuadrado <= 10){
+    resultado.push (numeroQuadrado**2)
+    numeroQuadrado++
    }
-    return numeroQuadrado
+    return resultado
 }
 
 console.log(squareNumbers());
@@ -66,12 +71,13 @@ console.log(squareNumbers());
 function countingBackwards() {
     
   let max = 20
+  const resultado = []
 
-  while(max > 1){
-    console.log(max)
+  while(max >= 1){
+    resultado.push(max)
     max -= 1
   }
-  return max
+  return resultado
 }
 
 console.log(countingBackwards());
@@ -79,12 +85,12 @@ console.log(countingBackwards());
 function evenNumbersBackwards() {
     
     let max = 20
-
-    while (max > 2){
-      console.log(max)
+    const resultado = []
+    while (max >= 2){
+      resultado.push(max)
       max -= 2
     }
-    return max
+    return resultado
   }
 
 console.log(evenNumbersBackwards());
@@ -92,12 +98,13 @@ console.log(evenNumbersBackwards());
 function oddNumbersBackwards() {
     
 let impares = 19
+const resultado = []
 
-  while(impares > 1){
-    console.log(impares)
+  while(impares >= 1){
+    resultado.push(impares)
     impares -= 2
   }
-  return impares
+  return resultado
 }
 
 console.log(oddNumbersBackwards());
@@ -105,12 +112,13 @@ console.log(oddNumbersBackwards());
 function multiplesOfFiveBackwards() {
     
   let max = 100
-
-    while(max > 5){
-      console.log(max)
+  const resultado = []
+  
+    while(max >= 5){
+      resultado.push(max)
       max -= 5
     }
-    return max
+    return resultado
 }
 
 console.log(multiplesOfFiveBackwards());
@@ -118,12 +126,13 @@ console.log(multiplesOfFiveBackwards());
 function squareNumbersBackwards() {
     
 let max = 10
+const resultado = []
 
-   while(max > 1){
-    console.log(max**2)
+   while(max >= 1){
+    resultado.push (max**2)
     max -= 1
   }
-  return max
+  return resultado
 }
 
 console.log(squareNumbersBackwards());
